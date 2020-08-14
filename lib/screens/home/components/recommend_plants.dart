@@ -3,8 +3,8 @@ import 'package:plant_app/screens/details/details_screen.dart';
 
 import '../../../constants.dart';
 
-class RecomendsPlants extends StatelessWidget {
-  const RecomendsPlants({
+class recommendsPlants extends StatelessWidget {
+  const recommendsPlants({
     Key key,
   }) : super(key: key);
 
@@ -14,7 +14,7 @@ class RecomendsPlants extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: <Widget>[
-          RecomendPlantCard(
+          recommendPlantCard(
             image: "assets/images/image_1.png",
             title: "Samantha",
             country: "Russia",
@@ -28,7 +28,7 @@ class RecomendsPlants extends StatelessWidget {
               );
             },
           ),
-          RecomendPlantCard(
+          recommendPlantCard(
             image: "assets/images/image_2.png",
             title: "Angelica",
             country: "Russia",
@@ -42,7 +42,7 @@ class RecomendsPlants extends StatelessWidget {
               );
             },
           ),
-          RecomendPlantCard(
+          recommendPlantCard(
             image: "assets/images/image_3.png",
             title: "Samantha",
             country: "Russia",
@@ -55,8 +55,8 @@ class RecomendsPlants extends StatelessWidget {
   }
 }
 
-class RecomendPlantCard extends StatelessWidget {
-  const RecomendPlantCard({
+class recommendPlantCard extends StatelessWidget {
+  const recommendPlantCard({
     Key key,
     this.image,
     this.title,
