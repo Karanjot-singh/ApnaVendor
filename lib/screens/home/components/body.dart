@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:plant_app/constants.dart';
+import '../../.././constants.dart';
 
 import 'featured_plants.dart';
 import 'header_with_searchbox.dart';
-import 'categorie_plants.dart';
+import 'category_plants.dart';
 import 'title_with_more_bbtn.dart';
 
 class Body extends StatelessWidget {
