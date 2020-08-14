@@ -3,8 +3,8 @@ import 'package:plant_app/screens/details/details_screen.dart';
 
 import '../../../constants.dart';
 
-class recommendsPlants extends StatelessWidget {
-  const recommendsPlants({
+class categoriesPlants extends StatelessWidget {
+  const categoriesPlants({
     Key key,
   }) : super(key: key);
 
@@ -14,7 +14,7 @@ class recommendsPlants extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: <Widget>[
-          recommendPlantCard(
+          categoryCard(
             image: "assets/images/image_1.png",
             title: "Samantha",
             country: "Russia",
@@ -28,7 +28,7 @@ class recommendsPlants extends StatelessWidget {
               );
             },
           ),
-          recommendPlantCard(
+          categoryCard(
             image: "assets/images/image_2.png",
             title: "Angelica",
             country: "Russia",
@@ -42,7 +42,7 @@ class recommendsPlants extends StatelessWidget {
               );
             },
           ),
-          recommendPlantCard(
+          categoryCard(
             image: "assets/images/image_3.png",
             title: "Samantha",
             country: "Russia",
@@ -55,8 +55,8 @@ class recommendsPlants extends StatelessWidget {
   }
 }
 
-class recommendPlantCard extends StatelessWidget {
-  const recommendPlantCard({
+class categoryCard extends StatelessWidget {
+  const categoryCard({
     Key key,
     this.image,
     this.title,
@@ -92,13 +92,13 @@ class recommendPlantCard extends StatelessWidget {
                   bottomLeft: Radius.circular(10),
                   bottomRight: Radius.circular(10),
                 ),
-                boxShadow: [
-                  BoxShadow(
-                    offset: Offset(0, 10),
-                    blurRadius: 50,
-                    color: kPrimaryColor.withOpacity(0.23),
-                  ),
-                ],
+                // boxShadow: [
+                //   BoxShadow(
+                //     offset: Offset(0, 10),
+                //     blurRadius: 50,
+                //     color: kPrimaryColor.withOpacity(0.23),
+                //   ),
+                // ],
               ),
               child: Row(
                 children: <Widget>[
