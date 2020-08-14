@@ -18,13 +18,14 @@ class MyBottomNavBar extends StatelessWidget {
       ),
       height: 80,
       decoration: BoxDecoration(
+        
         color: Colors.white,
         boxShadow: [
-          BoxShadow(
-            offset: Offset(0, -10),
-            blurRadius: 35,
-            color: kPrimaryColor.withOpacity(0.38),
-          ),
+          // BoxShadow(
+          //   offset: Offset(0, -10),
+          //   blurRadius: 35,
+          //   color: kPrimaryColor.withOpacity(0.38),
+          // ),
         ],
       ),
       child: Row(
