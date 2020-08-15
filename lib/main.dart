@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:Ignite/constants.dart';
 import 'package:Ignite/screens/home/home_screen.dart';
+import 'package:Ignite/screens/vendor_registeration/vendor_registeration.dart';
+
 
 import 'constants.dart';
 
@@ -22,7 +24,9 @@ class MyApp extends StatelessWidget {
         textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeScreen(),
+      // home: HomeScreen(),
+      home: VendorScreen(),
+
     );
   }
 }
