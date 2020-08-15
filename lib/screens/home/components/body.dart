@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../.././constants.dart';
 
-import 'featured_plants.dart';
+import 'vendor_featured.dart';
 import 'header_with_searchbox.dart';
 import 'vendor_categories.dart';
 import 'title_with_more_bbtn.dart';
