@@ -77,30 +77,20 @@ class categoryCard extends StatelessWidget {
       width: size.width * 0.4,
       child: Column(
         children: <Widget>[
-          Image.asset(
-            image,
-            height: 100,
-            width: 200,
-            fit: BoxFit.fitWidth,
-          ),
+          
           GestureDetector(
             onTap: press,
             child: Container(
+              width: 170,
               padding: EdgeInsets.all(kDefaultPadding / 2),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.all(
                   Radius.circular(10),
                 ),
-                // boxShadow: [
-                //   BoxShadow(
-                //     offset: Offset(0, 10),
-                //     blurRadius: 50,
-                //     color: kPrimaryColor.withOpacity(0.23),
-                //   ),
-                // ],
               ),
-              child: RichText(
+              child: Column(children: [
+                RichText(
                 text: TextSpan(
                   children: [
                     TextSpan(
@@ -109,8 +99,14 @@ class categoryCard extends StatelessWidget {
                   ],
                 ),
               ),
+              Image.asset(
+            image,
+            height: 75,
+            width: 170,
+            fit: BoxFit.contain,
+          ),             ],),
             ),
-          )
+            ),
         ],
       ),
     );
