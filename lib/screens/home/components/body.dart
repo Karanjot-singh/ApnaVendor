@@ -3,7 +3,7 @@ import '../../.././constants.dart';
 
 import 'featured_plants.dart';
 import 'header_with_searchbox.dart';
-import 'category_plants.dart';
+import 'vendor_categories.dart';
 import 'title_with_more_bbtn.dart';
 
 class Body extends StatelessWidget {
@@ -18,9 +18,9 @@ class Body extends StatelessWidget {
         children: <Widget>[
           HeaderWithSearchBox(size: size),
           TitleWithMoreBtn(title: "Categories", press: () {}),
-          categoriesPlants(),
+          vendorCategories(),
           TitleWithMoreBtn(title: "Featured Plants", press: () {}),
-          FeaturedPlants(),
+          vendorFeatured(),
           SizedBox(height: kDefaultPadding),
         ],
       ),

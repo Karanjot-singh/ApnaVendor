@@ -3,8 +3,8 @@ import 'package:Ignite/screens/details/details_screen.dart';
 
 import '../../../constants.dart';
 
-class categoriesPlants extends StatelessWidget {
-  const categoriesPlants({
+class vendorCategories extends StatelessWidget {
+  const vendorCategories({
     Key key,
   }) : super(key: key);
 
