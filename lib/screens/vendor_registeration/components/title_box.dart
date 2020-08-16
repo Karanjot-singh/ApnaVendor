@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 
 import '../../../constants.dart';
 
@@ -6,10 +8,9 @@ class Titlebox extends StatelessWidget {
   const Titlebox({
     Key key,
     this.title,
-    this.press,
   }) : super(key: key);
   final String title;
-  final Function press;
+  // final Function press;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,14 @@ class Titlebox extends StatelessWidget {
               borderRadius: BorderRadius.circular(36),
             ),
             color: kAccentColor,
-            onPressed: press,
+            onPressed: () async {
+                const url = 'https://google.com';
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Could not launch $url';
+                }
+              },
             child: Text(
               "Register Now",
               style: TextStyle(color: Colors.white),
