@@ -17,11 +17,11 @@ class VendorScreen extends StatelessWidget {
 
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
-      title: Text(
-                  'Local',
-                  style: Theme.of(context).textTheme.headline5.copyWith(
-                      color: Colors.white, fontWeight: FontWeight.bold),
-                ),
+      // title: Text(
+      //             'Local',
+      //             style: Theme.of(context).textTheme.headline5.copyWith(
+      //                 color: Colors.white, fontWeight: FontWeight.bold),
+      //           ),
       elevation: 0,
       leading: IconButton(
         icon: SvgPicture.asset("assets/icons/menu.svg"),
