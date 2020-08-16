@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../constants.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 import 'header_with_searchbox.dart';
 // import 'vendor_categories.dart';
@@ -17,7 +18,7 @@ class VendorBody extends StatelessWidget {
         children: <Widget>[
           HeaderWithSearchBox(size: size),
 
-          Titlebox(title: "Be a part of this change!", press: () {}),
+          Titlebox(title: "Be a part of this change!", press: () {WebView(initialUrl: "https://github.com/",javascriptMode: JavascriptMode.unrestricted,);}),
           // vendorFeatured(),
           SizedBox(height: kDefaultPadding),
         ],
