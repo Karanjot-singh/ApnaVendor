@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:Ignite/constants.dart';
+import 'package:Locals/constants.dart';
 
 import 'image_and_icons.dart';
 import 'title_and_price.dart';

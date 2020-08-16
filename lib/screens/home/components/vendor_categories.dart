@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:Ignite/screens/details/details_screen.dart';
+import 'package:Locals/screens/details/details_screen.dart';
 
 import '../../../constants.dart';
 

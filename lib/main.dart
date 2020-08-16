@@ -1,8 +1,8 @@
-// import 'package:Ignite/screens/details/details_screen.dart';
+// import 'package:Locals/screens/details/details_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:Ignite/constants.dart';
-import 'package:Ignite/screens/home/home_screen.dart';
-// import 'package:Ignite/screens/vendor_registeration/vendor_registeration.dart';
+import 'package:Locals/constants.dart';
+import 'package:Locals/screens/home/home_screen.dart';
+// import 'package:Locals/screens/vendor_registeration/vendor_registeration.dart';
 
 
 import 'constants.dart';
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: '<Ignite>',
+      title: '<Locals>',
       theme: ThemeData(
         scaffoldBackgroundColor: kBackgroundColor,
         primaryColor: kPrimaryColor,

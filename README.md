@@ -1,4 +1,4 @@
-# Ignite
+# Locals
 
 An exciting new Flutter project.
 Most details are under wraps for now!

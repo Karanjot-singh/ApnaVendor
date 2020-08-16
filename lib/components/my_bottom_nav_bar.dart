@@ -1,5 +1,5 @@
-import 'package:Ignite/screens/home/home_screen.dart';
-import 'package:Ignite/screens/vendor_registeration/vendor_registeration.dart';
+import 'package:Locals/screens/home/home_screen.dart';
+import 'package:Locals/screens/vendor_registeration/vendor_registeration.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';

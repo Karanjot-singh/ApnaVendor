@@ -1,4 +1,4 @@
-package com.example.Ignite
+package com.example.Locals
 
 import io.flutter.embedding.android.FlutterActivity
 

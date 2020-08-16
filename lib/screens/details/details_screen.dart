@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:Ignite/screens/details/components/body.dart';
+import 'package:Locals/screens/details/components/body.dart';
 
 class DetailsScreen extends StatelessWidget {
   @override
