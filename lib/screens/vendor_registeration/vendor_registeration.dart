@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:Ignite/components/my_bottom_nav_bar.dart';
-import 'package:Ignite/screens/vendor_registeration/components/body.dart';
+import 'package:Ignite/screens/vendor_registeration/components/vbody.dart';
 
 class VendorScreen extends StatelessWidget {
   @override

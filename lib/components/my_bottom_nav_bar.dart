@@ -50,7 +50,7 @@ class MyBottomNavBar extends StatelessWidget {
             icon: SvgPicture.asset("assets/icons/user-icon.svg"),
             onPressed: () {
               Navigator.of(context).pushNamed(
-                '/vendor',
+                '/vendor',arguments: '',
               );
             },
           ),
