@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:Ignite/constants.dart';
 import 'package:Ignite/screens/home/home_screen.dart';
-import 'package:Ignite/screens/vendor_registeration/vendor_registeration.dart';
+// import 'package:Ignite/screens/vendor_registeration/vendor_registeration.dart';
 
 
 import 'constants.dart';
