@@ -13,11 +13,11 @@ class VendorBody extends StatelessWidget {
     // it enable scrolling on small device
     return SingleChildScrollView(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           HeaderWithSearchBox(size: size),
 
-          Titlebox(title: "Popular Near You", press: () {}),
+          Titlebox(title: "Be a part of this change!", press: () {}),
           // vendorFeatured(),
           SizedBox(height: kDefaultPadding),
         ],

@@ -18,15 +18,15 @@ class Titlebox extends StatelessWidget {
       child: Column(
         children: <Widget>[
           TitleWithCustomUnderline(text: title),
-          SizedBox(height:kDefaultPadding),
+          SizedBox(height: kDefaultPadding/2),
           FlatButton(
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(36),
             ),
             color: kAccentColor,
             onPressed: press,
             child: Text(
-              "More",
+              "Register Now",
               style: TextStyle(color: Colors.white),
             ),
           ),
@@ -47,26 +47,27 @@ class TitleWithCustomUnderline extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 24,
+      height: 460,
       child: Stack(
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(left: kDefaultPadding / 4),
             child: Text(
               text,
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
             ),
           ),
-          // Positioned(
-          //   bottom: 0,
-          //   left: 0,
-          //   right: 0,
-          //   child: Container(
-          //     margin: EdgeInsets.only(right: kDefaultPadding / 4),
-          //     height: 7,
-          //     color: kPrimaryColor.withOpacity(0.2),
-          //   ),
-          // )
+          Positioned(
+            bottom: 0,
+            left: 0,
+            right: 0,
+            child: Image.asset(
+              "assets/images/join.png",
+              height: 350,
+              width: 170,
+              fit: BoxFit.contain,
+            ),
+          ),
         ],
       ),
     );
