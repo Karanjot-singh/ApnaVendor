@@ -1,3 +1,6 @@
+import 'package:Ignite/screens/home/home_screen.dart';
+import 'package:Ignite/screens/vendor_registeration/vendor_registeration.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -37,9 +40,16 @@ class MyBottomNavBar extends StatelessWidget {
           IconButton(
             icon: SvgPicture.asset("assets/icons/heart-icon.svg"),
             onPressed: () {
-              Navigator.of(context).pushNamed(
-                '/',
-              );
+              
+                // Pushing a route directly, WITHOUT using a named route
+                Navigator.of(context).push(
+                  // With MaterialPageRoute, you can pass data between pages,
+                  // but if you have a more complex app, you will quickly get lost.
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        HomeScreen(),
+                  ),
+                );
             },
           ),
           IconButton(
@@ -49,9 +59,14 @@ class MyBottomNavBar extends StatelessWidget {
           IconButton(
             icon: SvgPicture.asset("assets/icons/user-icon.svg"),
             onPressed: () {
-              Navigator.of(context).pushNamed(
-                '/vendor',arguments: '',
-              );
+              Navigator.of(context).push(
+                  // With MaterialPageRoute, you can pass data between pages,
+                  // but if you have a more complex app, you will quickly get lost.
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        VendorScreen(),
+                  ),
+                );
             },
           ),
         ],
