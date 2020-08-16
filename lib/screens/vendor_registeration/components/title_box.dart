@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
 
-class TitleWithMoreBtn extends StatelessWidget {
-  const TitleWithMoreBtn({
+class Titlebox extends StatelessWidget {
+  const Titlebox({
     Key key,
     this.title,
     this.press,
@@ -15,10 +15,10 @@ class TitleWithMoreBtn extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
-      child: Row(
+      child: Column(
         children: <Widget>[
           TitleWithCustomUnderline(text: title),
-          Spacer(),
+          SizedBox(height:kDefaultPadding),
           FlatButton(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
