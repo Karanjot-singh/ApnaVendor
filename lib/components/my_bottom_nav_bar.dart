@@ -37,7 +37,7 @@ class MyBottomNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          IconButton(
+          IconButton(tooltip: "Nearby",
             icon: SvgPicture.asset("assets/icons/heart-icon.svg"),
             onPressed: () {
               
@@ -52,11 +52,11 @@ class MyBottomNavBar extends StatelessWidget {
                 );
             },
           ),
-          IconButton(
+          IconButton(tooltip: "Search",
             icon: SvgPicture.asset("assets/icons/search.svg"),
             onPressed: () {},
           ),
-          IconButton(
+          IconButton(tooltip: "Vendors",
             icon: SvgPicture.asset("assets/icons/user-icon.svg"),
             onPressed: () {
               Navigator.of(context).push(
