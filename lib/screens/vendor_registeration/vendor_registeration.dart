@@ -8,7 +8,7 @@ class VendorScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(context),
-      body: Body(),
+      body: VendorBody(),
       bottomNavigationBar: MyBottomNavBar(),
     );
   

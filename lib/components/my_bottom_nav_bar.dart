@@ -19,10 +19,9 @@ class MyBottomNavBar extends StatelessWidget {
       height: 60,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(36),
-                topRight: Radius.circular(36),
-              ),
-             
+          topLeft: Radius.circular(36),
+          topRight: Radius.circular(36),
+        ),
         color: Colors.white,
         boxShadow: [
           BoxShadow(
@@ -37,7 +36,11 @@ class MyBottomNavBar extends StatelessWidget {
         children: <Widget>[
           IconButton(
             icon: SvgPicture.asset("assets/icons/heart-icon.svg"),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushNamed(
+                '/',
+              );
+            },
           ),
           IconButton(
             icon: SvgPicture.asset("assets/icons/search.svg"),
@@ -45,7 +48,11 @@ class MyBottomNavBar extends StatelessWidget {
           ),
           IconButton(
             icon: SvgPicture.asset("assets/icons/user-icon.svg"),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushNamed(
+                '/vendor',
+              );
+            },
           ),
         ],
       ),

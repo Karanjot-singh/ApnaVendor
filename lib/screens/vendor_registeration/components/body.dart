@@ -5,7 +5,7 @@ import 'header_with_searchbox.dart';
 // import 'vendor_categories.dart';
 import 'title_with_more_bbtn.dart';
 
-class Body extends StatelessWidget {
+class VendorBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // It will provie us total height  and width of our screen
@@ -17,8 +17,6 @@ class Body extends StatelessWidget {
         children: <Widget>[
           HeaderWithSearchBox(size: size),
 
-          TitleWithMoreBtn(title: "Categories", press: () {}),
-          // vendorCategories(),
           TitleWithMoreBtn(title: "Featured Plants", press: () {}),
           // vendorFeatured(),
           SizedBox(height: kDefaultPadding),
