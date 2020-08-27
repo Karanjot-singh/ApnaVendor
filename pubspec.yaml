@@ -21,6 +21,11 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  #firebase_database
+  firebase_database:
+  #firebase_login
+  firebase_auth:
+  google_sign_in:
   flutter:
     sdk: flutter
 
