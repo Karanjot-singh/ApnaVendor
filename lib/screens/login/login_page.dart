@@ -1,7 +1,7 @@
-import 'screens/home/home_screen.dart';
+import '../home/home_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import './auth.dart';
+import '../../auth.dart';
 
 class LoginPage extends StatelessWidget {
   @override
