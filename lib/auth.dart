@@ -1,39 +1,40 @@
-// //firebase_login
-// import 'package:firebase_auth/firebase_auth.dart';
-// import 'package:google_sign_in/google_sign_in.dart';
-// final FirebaseAuth _auth = FirebaseAuth.instance;
-// final GoogleSignIn googleSignIn = GoogleSignIn();
+//firebase_login
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
-// //async functions will not be executed asap, won't change or stop others functions
-// // that are working on with the application at the moment
+final FirebaseAuth _auth = FirebaseAuth.instance;
+final GoogleSignIn googleSignIn = GoogleSignIn();
 
-// Future<User> signInWithGoogle() async {
+//async functions will not be executed asap, won't change or stop others functions
+// that are working on with the application at the moment
 
-//   //google related starts
-//   // Let the user sign in , get auth from google and get credential > to firebase, authenticate firebase
-//   final GoogleSignInAccount googleSignInAccount = await googleSignIn.signIn();
-//   final GoogleSignInAuthentication googleSignInAuthentication =
-//       await googleSignInAccount.authentication;
+Future<FirebaseUser> signInWithGoogle() async {
 
-//   final AuthCredential credential = GoogleAuthProvider.getCredential(
-//       idToken: googleSignInAuthentication.idToken,
-//       accessToken: googleSignInAuthentication.accessToken);
-//    //google related stuff ends
+  //google related starts
+  // Let the user sign in , get auth from google and get credential > to firebase, authenticate firebase
+  final GoogleSignInAccount googleSignInAccount = await googleSignIn.signIn();
+  final GoogleSignInAuthentication googleSignInAuthentication =
+      await googleSignInAccount.authentication;
 
-//   //firebase user credntial passes
-//   final AuthResult authResult = await _auth.signInWithCredential(credential);
-//   final User user = authResult.user; //firebase user
+  final AuthCredential credential = GoogleAuthProvider.getCredential(
+      idToken: googleSignInAuthentication.idToken,
+      accessToken: googleSignInAuthentication.accessToken);
+   //google related stuff ends
 
-//   assert(!user.isAnonymous);
-//   assert(await user.getIdToken() != null);
+  //firebase user credntial passes
+  final AuthResult authResult = await _auth.signInWithCredential(credential);
+  final FirebaseUser user = authResult.user; //firebase user
 
-//   final User currentUser = await _auth.currentUser();
-//   assert(currentUser.uid == user.uid);
-//   //firebase signed in user is the same as the google sign in user
+  assert(!user.isAnonymous);
+  assert(await user.getIdToken() != null);
 
-//   return user;
-// }
+  final FirebaseUser currentUser = await _auth.currentUser();
+  assert(currentUser.uid == user.uid);
+  //firebase signed in user is the same as the google sign in user
 
-// void signOutGoogle() async {
-//   await googleSignIn.signOut();
-// }
+  return user;
+}
+
+void signOutGoogle() async {
+  await googleSignIn.signOut();
+}
