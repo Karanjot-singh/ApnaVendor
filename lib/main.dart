@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:Locals/constants.dart';
 import 'package:Locals/screens/home/home_screen.dart';
 // import 'package:Locals/screens/vendor_registeration/vendor_registeration.dart';
+import 'package:Locals/screens/dummy/components/vendor_registeration.dart';
+
 
 
 import 'constants.dart';
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
         textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeScreen(),
+      home: VendorDummy(),
       // home:DetailsScreen(),
       // home: VendorScreen(),
 
