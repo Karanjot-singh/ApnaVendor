@@ -2,9 +2,14 @@
 
 ![](Screenshots/ApnaVendor.jpeg)
 
+Apna Vendor is an easy-to-use vendor assist platform that connects unorganized vendors to both policy makers and users for improving their socio-economic condition and growing businesses locally.
+**Presented during MIT COVID-19 India Turning The Tide Hackathon by Team Abhyuday.**
+This repository contains the cross platform app used for the demo.
+
+![](Screenshots/mit.png)
+
 
 **App Screenshots**
-
 
 
 
