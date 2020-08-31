@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:Locals/screens/details/components/body.dart';
+import 'package:ApnaVendor/screens/details/components/body.dart';
 
 class DetailsScreen extends StatelessWidget {
   @override

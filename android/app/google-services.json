@@ -1,16 +1,16 @@
 {
   "project_info": {
     "project_number": "1097487194964",
-    "firebase_url": "https://locals-354e1.firebaseio.com",
-    "project_id": "locals-354e1",
-    "storage_bucket": "locals-354e1.appspot.com"
+    "firebase_url": "https://ApnaVendor-354e1.firebaseio.com",
+    "project_id": "ApnaVendor-354e1",
+    "storage_bucket": "ApnaVendor-354e1.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:1097487194964:android:19df01c92523d1792e86c1",
         "android_client_info": {
-          "package_name": "com.example.Locals"
+          "package_name": "com.example.ApnaVendor"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "1097487194964-asghj511s73asgf2g3m63e5fv2agd0e6.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.Locals",
+            "package_name": "com.example.ApnaVendor",
             "certificate_hash": "483f6f91c8a060805cae4597b4278af8be2b387b"
           }
         },

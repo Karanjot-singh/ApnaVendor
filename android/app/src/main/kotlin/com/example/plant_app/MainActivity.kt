@@ -1,4 +1,4 @@
-package com.example.Locals
+package com.example.ApnaVendor
 
 import io.flutter.embedding.android.FlutterActivity
 

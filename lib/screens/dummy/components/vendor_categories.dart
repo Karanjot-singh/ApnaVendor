@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:Locals/screens/details/details_screen.dart';
+import 'package:ApnaVendor/screens/details/details_screen.dart';
 
 import '../../../constants.dart';
 
